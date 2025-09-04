@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #050505;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+
+  h1{
+      font-family: 'Orbitron', sans-serif;
+  }
+
+  h2{
+      font-family: 'Orbitron', sans-serif;
+  }
+
+  h3{
+      font-family: 'Orbitron', sans-serif;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #000;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 100px;
+    margin-right: 10px;
+  }
+
+  .letra-t8000 {
+    width: 150px;
+  } 
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 10px;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #ff0000;
+  }
+  
+  .robo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 70px;
+    flex-wrap: wrap;
+  }
+  
+  .robo-text h2 {
+    font-size: 40px;
+    margin-bottom: 70px;
+  }
+  
+  .robo-text p {
+    font-size: 16px;
+      max-width: 500px;
+    color: #bbb;
+  }
+  
+  .robo img {
+    width: 500px;
+    margin-top: 20px;
+    height: auto;
+  }
+  
+  .armas {
+    padding: 60px 50px;
+    background-color: #0e0e0e;
+  }
+  
+  .armas h3 {
+    font-size: 30px;
+    margin-bottom: 400px;
+  }
+  
+  .armas-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .armas-container p {
+    position: absolute;
+    top: 880px;
+    margin-right: 340px;
+    background-color: #707070;
+    font-size: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    color: #ccc;
+  }
+  
+  .armas-container img {
+    position: absolute;
+    top: 350px;
+    left: 530px;
+    margin-left: 800px;
+    width: 30%;
+  }
+  
+  .galeria {
+    padding: 60px 50px;
+  }
+  
+  .galeria h3 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .galeria-imagens {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .galeria-imagens img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid #444;
+    border-radius: 5px;
+  }
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #000;
+    color: #888;
+  }
+  

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+    background-color: #050505;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+
+  h1{
+      font-family: 'Orbitron', sans-serif;
+  }
+
+  h2{
+      font-family: 'Orbitron', sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #000;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 100px;
+    margin-right: 10px;
+  }
+
+  .letra-t8000 {
+    width: 150px;
+  } 
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 10px;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #ff0000;
+  }
+
+  .somos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px;
+  }
+
+  .somos p {
+    font-size: 20px;
+    max-width: 650px;
+    line-height: 1.6;
+    color: #ccc;
+  }
+
+  .somos h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+
+  .somos img {
+    height: 30%;
+    width: 30%;
+  }
+
+  .conheca {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 30px;
+    margin-right: 10px;
+    gap: 50px;
+    padding: 60px 40px;
+    color: white;
+    flex-wrap: wrap; 
+  }
+
+
+  .conheca-texto {
+    max-width: 500px;
+  }
+
+  .conheca-texto h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .conheca-texto p {
+    line-height: 1.6;
+    color: #ccc;
+  }
+
+  .cards {  
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .card {
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+
+  .card h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .card p {
+    color: #ccc;
+    font-size: 14px;
+  }
+
+
+  footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #000;
+    color: #888;
+    font-size: 14px;
+  }
