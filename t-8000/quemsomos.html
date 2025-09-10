@@ -1,85 +1,154 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>T-8000 - Sobre</title>
-  <link rel="stylesheet" href="css/stylesomos.css" />
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-8000</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-        <div class="logo">
-            <img class="logo-img" src="img/logo.png" alt="T-8000 logo">
-            <img class="letra-t8000" src="img/T-8000.png" alt="T-8000 escrita">
-          </div>
-          <nav>
-            <ul>
-              <li><a href="quemsomos.html">Quem Somos</a></li>
-              <li><a href="index.html">Robô</a></li>
-              <li><a href="index.html">Armas</a></li>
-              <li><a href="index.html">Galeria</a></li>
-              <li><a href="#">Contato</a></li>
-            </ul>
-          </nav>
-  </header>
-  <main>
-    <div class="somos">
-      <div class="texto-somos">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand text-white" href="#inicio">
+      <img src="img/logo.png" width="60" alt="Logo T-8000"> T-8000
+    </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+    <span class="custom-toggler-icon">
+      <div></div>
+    </span>
+  </button>
+
+    <div class="collapse navbar-collapse" id="menuNav">
+      <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link text-white" href="quemsomos.html">Quem somos</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="index.html">Robô</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="index.html">Armas</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="index.html">Hardware</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="index.html">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="index.html">Vídeos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+  <!-- Missão e História -->
+  <div class="container py-5">
+    <div class="row align-items-center mb-5 somos">
+      <div class="col-md-6">
         <h2>NOSSA MISSÃO</h2>
         <p>
-          Nossa missão com o robô T-8000 é desenvolver uma máquina imbatível, pronta para superar qualquer oponente em combate.
-          Mais do que vencer batalhas, buscamos a excelência em engenharia, estratégia e inovação. Nosso objetivo final é levar o T-8000 ao evento NEXT da FIAP
-          e conquistar o primeiro lugar, provando que tecnologia, dedicação e trabalho em equipe são a combinação perfeita para a vitória.
+          Nossa missão com o robô T-8000 é desenvolver uma máquina imbatível, pronta para superar qualquer oponente em combate. Mais do que vencer batalhas, buscamos a excelência em engenharia, estratégia e inovação. Nosso objetivo final é levar o T-8000 ao evento NEXT da FIAP e conquistar o primeiro lugar.
         </p>
       </div>
-      <img src="img/roboCup.png" alt="Foto da missão">
+      <div class="col-md-6">
+        <img src="img/roboCup.png" alt="Missão RoboCup">
+      </div>
     </div>
-    <div class="somos">        
-      <img src="img/maker.png" alt="Foto da equipe">
-      <div class="texto-somos">
+
+    <div class="row align-items-center mb-5 somos flex-md-row-reverse">
+      <div class="col-md-6">
         <h2>NOSSA HISTÓRIA</h2>
         <p>
-          Somos estudantes da FIAP, do curso de Sistemas de Informação, atualmente no primeiro ano da nossa jornada.
-          Movidos pela curiosidade e paixão por tecnologia, embarcamos no desafio de construir nosso primeiro robô: o T-8000.
-          Cada linha de código, cada peça montada e cada teste realizado representam nosso aprendizado e evolução.
-          Estamos evoluindo juntos, enfrentando obstáculos, aprendendo com os erros e nos preparando para mostrar do que somos capazes no evento NEXT.
+          Somos estudantes da FIAP, do curso de Sistemas de Informação. Movidos pela paixão por tecnologia, embarcamos no desafio de construir nosso primeiro robô: o T-8000. Cada linha de código e cada peça montada representam nosso aprendizado. Estamos prontos para mostrar nossa evolução no evento NEXT.
         </p>
+      </div>
+      <div class="col-md-6">
+        <img src="img/maker.png" alt="Equipe em ação">
       </div>
     </div>
-    <div class="conheca">
-      <div class="conheca-texto">
-        <h2>CONHEÇA NOSSA <br> EQUIPE</h2>
-        <p>
-          Somos um time de estudantes apaixonados por tecnologia, inovação e desafios.  Unidos pelo objetivo de criar o T-8000, combinamos nossas habilidades e aprendizados do curso de Sistemas de Informações da FIAP para transformar ideias em realidade. Juntos somos mais fortes e estamos prontos para conquistar o pódio no evento NEXT!
-        </p>
-      </div>
-      <div class="cards">
-        <div class="card">
-          <img src="img/gaby.png" alt="Gabrielly">
-          <h3>Gabrielly Barbosa Camilo</h3>
+  </div>
+
+  <!-- Equipe -->
+  <div class="container py-5">
+    <div class="text-center mb-4">
+      <h2>CONHEÇA NOSSA EQUIPE</h2>
+      <p>Um time apaixonado por tecnologia e inovação, unidos para criar o T-8000.</p>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-3">
+        <div class="card p-3 text-center">
+          <img src="img/gaby.png" class="img-fluid" alt="Gabrielly">
+          <h5 class="mt-2">Gabrielly Barbosa Camilo</h5>
           <p>Web Design • Front-End</p>
         </div>
-        <div class="card">
-          <img src="img/maria.png" alt="Maria">
-          <h3>Marina Eduardo Coppola</h3>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-3 text-center">
+          <img src="img/maria.png" class="img-fluid" alt="Maria">
+          <h5 class="mt-2">Marina Eduardo Coppola</h5>
           <p>Maker</p>
         </div>
-        <div class="card">
-          <img src="img/luccas.png" alt="Lucas">
-          <h3>Lucas Rafael Gomes</h3>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-3 text-center">
+          <img src="img/luccas.png" class="img-fluid" alt="Lucas">
+          <h5 class="mt-2">Lucas Rafael Gomes</h5>
           <p>Back-End</p>
         </div>
-        <div class="card">
-          <img src="img/victor.png" alt="Vitor">
-          <h3>Victor Hugo Santana</h3>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-3 text-center">
+          <img src="img/victor.png" class="img-fluid" alt="Victor">
+          <h5 class="mt-2">Victor Hugo Santana</h5>
           <p>Maker</p>
         </div>
       </div>
     </div>
-  </main>
-  <footer>
-    <p>©Exterminadores Inc.</p>
+  </div>
+
+  <!-- Investidores -->
+  <div class="container py-5">
+    <h2 class="text-center mb-4">Plano para Investidores</h2>
+    <div class="accordion" id="accordionInvest">
+      <div class="accordion-item text-light">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nivel1">
+            Nível I - Dados Abertos
+          </button>
+        </h2>
+        <div id="nivel1" class="accordion-collapse collapse show" data-bs-parent="#accordionInvest">
+          <div class="accordion-body">
+            Apresentação do T-8000, visão geral da startup, informações públicas sobre o robô e canais de contato.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item bg-dark text-light">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nivel2">
+            Nível II - Negociação
+          </button>
+        </h2>
+        <div id="nivel2" class="accordion-collapse collapse" data-bs-parent="#accordionInvest">
+          <div class="accordion-body">
+            Início da negociação sob termo de sigilo, com acesso a projeções preliminares e sondagens de mercado.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item bg-dark text-light">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nivel3">
+            Nível III - Fechamento
+          </button>
+        </h2>
+        <div id="nivel3" class="accordion-collapse collapse" data-bs-parent="#accordionInvest">
+          <div class="accordion-body">
+            Projeções detalhadas, diferenciais do T-8000, acordos contratuais e plano de expansão.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <footer class="bg-dark text-center text-light py-3"> 
+      <p>© Exterminadores Inc.</p>
   </footer>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
