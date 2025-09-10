@@ -1,57 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T-8000</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-8000</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-      <div class="logo">
-          <img class="logo-img" src="img/logo.png" alt="T-8000 logo">
-          <img class="letra-t8000" src="img/T-8000.png" alt="T-8000 escrita">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand text-white" href="#inicio">
+      <img src="img/logo.png" width="100"> T-8000
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menuNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-white" href="quemsomos.html">Quem somos</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#robo">Robô</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#armas">Armas</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#hardware">Hardware</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#videos">Vídeos</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Seção Robô -->
+  <section id="robo" class="container py-5 mt-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2 class="titulo">CONHEÇA O T-8000: TECNOLOGIA, FORÇA, PRECISÃO</h2>
+        <p>A inspiração para o visual e a ideia do robô veio do T-8000, famoso personagem do filme O Exterminador do Futuro. 
+          Além de desenvolver o robô em si, nossa proposta é melhorar nossas habilidades em robótica e programação, incentivar a criatividade, fortalecer o trabalho em equipe e, claro, buscar a vitória na competição!</p>
       </div>
-      <nav>
-        <ul>
-          <li><a href="quemsomos.html">Quem Somos</a></li>
-          <li><a href="#">Robô</a></li>
-          <li><a href="#">Armas</a></li>
-          <li><a href="#">Galeria</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
-  </header>
-  <main>
-    <div class="robo">
-        <div class="robo-text">
-          <h2>CONHEÇA O T-8000: <br> TECNOLOGIA, FORÇA <br> PRECISÃO</h2>
-          <p>A inspiração para o visual e a ideia do robô veio do T-8000, famoso personagem do filme O Exterminador do Futuro.
-          Além de desenvolver o robô em si, nossa proposta é melhorar nossas habilidades em robótica e programação, incentivar a criatividade, fortalecer o trabalho em equipe e, claro, buscar a vitória na competição!
-          </p>
+      <div class="col-md-6 text-center">
+        <img src="img/cabecaRobo.png" class="img-fluid" alt="T-8000 Robô">
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Armas com Accordion -->
+  <section id="armas" class="bg-dark text-light py-5">
+    <div class="container">
+      <h3 class="mb-4">SISTEMAS DE ARMAS</h3>
+      <div class="accordion" id="accordionArmas">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#arma1">
+              Plataforma móvel de alfinetes
+            </button>
+          </h2>
+          <div id="arma1" class="accordion-collapse collapse show" data-bs-parent="#accordionArmas">
+            <div class="accordion-body">
+              O T-8000 utiliza uma plataforma de ataque localizada de ataque localizada no centro do robô, equipada com diversos alfinetes fizados em uma base de madeira. Essa plataforma se eleva rapidamente na vertical, permitindo perfurar e estourar o balão do adversário com alta eficiência durante a competição.
+            </div>
+          </div>
         </div>
-      <img src="img/cabecaRobo.png" alt="T-8000 Robô">
-    </div>
-    <div class="armas">
-      <h3>SISTEMAS DE ARMAS</h3>
-      <div class="armas-container">
-        <p>O robô T-8000 está equipado com dois braços articulados de aproximadamente 15 cm cada, montados na parte frontal do chassi. Esses braços foram projetados para atuar como armas mecânicas durante a competição, com o objetivo principal de estourar o balão do adversário.</p>
-        <img src="img/bracoRobo.png" alt="Braço do T-8000">
       </div>
     </div>
-    <div class="galeria">
-      <h3>GALERIA</h3>
-      <div class="galeria-imagens">
-        <img src="img/galeria1.png" alt="Imagem 1">
-        <img src="img/galeria2.png" alt="Imagem 2">
-        <img src="img/galeria3.png" alt="Imagem 3">
-        <img src="img/galeria4.png" alt="Imagem 4">
+  </section>
+
+  <!-- Seção Hardware com Cards -->
+  <section id="hardware" class="container py-5">
+    <h3 class="mb-4">HARDWARE DO ROBÔ</h3>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img src="img/hardware1.png" class="card-img-top" alt="Motor">
+          <div class="card-body">
+            <h5 class="card-title">Motores</h5>
+            <p class="card-text">Motores de alto torque para movimentação rápida e precisa do robô.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img src="img/hardware2.png" class="card-img-top" alt="Placa Arduino">
+          <div class="card-body">
+            <h5 class="card-title">Arduino</h5>
+            <p class="card-text">Placa controladora que permite programar e controlar todos os sistemas do T-8000.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img src="img/hardware3.png" class="card-img-top" alt="Bateria">
+          <div class="card-body">
+            <h5 class="card-title">Bateria</h5>
+            <p class="card-text">Fonte de energia recarregável garantindo autonomia na competição.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Seção Galeria com Carousel -->
+  <section id="galeria" class="bg-dark text-light py-5">
+    <div class="container">
+      <h3 class="mb-4">GALERIA</h3>
+      <div id="carouselRobo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active"><img src="img/galeria1.png" class="d-block w-100" alt="Imagem 1"></div>
+          <div class="carousel-item"><img src="img/galeria2.png" class="d-block w-100" alt="Imagem 2"></div>
+          <div class="carousel-item"><img src="img/galeria3.png" class="d-block w-100" alt="Imagem 3"></div>
+          <div class="carousel-item"><img src="img/galeria4.png" class="d-block w-100" alt="Imagem 4"></div>
+          <div class="carousel-item"><img src="img/galeria5.png" class="d-block w-100" alt="Imagem 5"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselRobo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselRobo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
     </div>
-  </main>
-  <footer>
-    <p>©Exterminadores Inc.</p>
+  </section>
+
+  <!-- Seção Vídeos -->
+  <section id="videos" class="container py-5">
+    <h3 class="mb-4">VÍDEOS DO PROJETO</h3>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="bg-dark text-light py-5 text-center">
+    <div class="container">
+      <h3>Contato</h3>
+      <p>Entre em contato com a equipe Exterminadores Inc. pelo email: <b>exterminadores@t8000.com</b></p>
+    </div>
+  </section>
+
+
+  <footer class="bg-dark text-center text-light py-3"> 
+      <p>© Exterminadores Inc.</p>
   </footer>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
