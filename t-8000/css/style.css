@@ -25,7 +25,6 @@ h2, h3 {
   color: var(--cor-texto);
 }
 
-/* Responsividade para título */
 @media (max-width: 768px) {
   .titulo {
     font-size: 28px;
@@ -111,8 +110,8 @@ h2, h3 {
 
 .card img {
   width: 100%;
-  height: 150px; /* altura fixa */
-  object-fit: contain; /* mantém proporção sem distorcer */
+  height: 150px; 
+  object-fit: contain; 
   margin-bottom: 10px;
 }
 

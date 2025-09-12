@@ -1,6 +1,16 @@
+:root {
+  --cor-fundo: #050505;
+  --cor-texto: #ffffff;
+  --cor-destaque: #ff0000;
+  --cor-card: #111111;
+  --cor-card-borda: #333333;
+  --cor-footer: #000000;
+  --cor-footer-texto: #888888;
+}
+
 body {
-  background-color: #050505;
-  color: #050505;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
   font-family: 'Arial', sans-serif;
 }
 
@@ -9,7 +19,7 @@ h1, h2, h3 {
 }
 
 .navbar {
-  background-color: #000 !important;
+  background-color: var(--cor-footer) !important;
 }
 
 .navbar-brand img {
@@ -22,9 +32,9 @@ h1, h2, h3 {
 }
 
 .card {
-  background-color: #111;
-  border: 1px solid #333;
-  color: #ccc;
+  background-color: var(--cor-card);
+  border: 1px solid var(--cor-card-borda);
+  color: var(--cor-texto);
   transition: transform 0.3s;
 }
 
@@ -40,7 +50,7 @@ h1, h2, h3 {
 footer {
   padding: 20px;
   text-align: center;
-  background-color: #000;
-  color: #888;
+  background-color: var(--cor-footer);
+  color: var(--cor-footer-texto);
   font-size: 14px;
 }
